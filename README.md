@@ -84,11 +84,9 @@ O arquivo **pyproject.toml** na raiz transforma este repositório em um pacote P
 *Por ser stateless (sem banco de dados próprio), este módulo pode ser instalado diretamente no ambiente virtual de outros projetos, como o **web-agronews**.*
 
 ### 1. Instalação no web-agronews
-Para testar a integração da biblioteca em um ambiente Django real sem afetar o banco de dados, você pode criar um **Management Command** personalizado.
+Para testar a integração da biblioteca em um ambiente Django real sem afetar o banco de dados, crie um **Management Command** personalizado.
 
 No terminal do seu projeto Django `web-agronews`, com o ambiente virtual ativado, instale o pacote em modo editável  (-e):
-
-Com o ambiente virtual do web-agronews ativado, instale o pacote localmente em modo editável (-e):
 ```bash
 pip install -e /caminho/para/classificador-agronews
 ```
