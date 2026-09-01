@@ -64,12 +64,13 @@ python tests/test_classificador.py
 ## Estrutura do Projeto
 ```bash
 classificador-agronews/
-├── models.py                 # Schemas Pydantic (NoticiaInput, ClassificacaoResultado)
-├── classificador.py          # Cliente do Gemini e lógica de classificação
 ├── pyproject.toml            # Configuração de empacotamento da biblioteca
 ├── requirements.txt          # Lista de dependências do ambiente
 ├── .env.example              # Modelo de configuração das variáveis
 ├── .gitignore                # Arquivos ignorados pelo Git
+└── classificador-agronews/
+    ├── classificador.py          # Cliente do Gemini e lógica de classificação
+    └── models.py                 # Schemas Pydantic (NoticiaInput, ClassificacaoResultado)
 └── tests/
     └── test_classificador.py # Script de teste de integração
 ```

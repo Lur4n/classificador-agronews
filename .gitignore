@@ -1,6 +1,13 @@
+# Arquivos e documentações locais
+pyproject.toml
+arquitetura.md
+
+# Variaveis de Ambiente
 .env
 .env.local
 venv/
+
+# indesejados
 __pycache__/
 *.egg-info/
 *.pyc
