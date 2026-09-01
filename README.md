@@ -63,16 +63,19 @@ python tests/test_classificador.py
 
 ## Estrutura do Projeto
 ```bash
-classificador-agronews/
-├── pyproject.toml            # Configuração de empacotamento da biblioteca
-├── requirements.txt          # Lista de dependências do ambiente
-├── .env.example              # Modelo de configuração das variáveis
-├── .gitignore                # Arquivos ignorados pelo Git
-└── classificador-agronews/
-    ├── classificador.py          # Cliente do Gemini e lógica de classificação
-    └── models.py                 # Schemas Pydantic (NoticiaInput, ClassificacaoResultado)
+├── .gitignore                  
+├── .env.example                
+├── README.md
+├── requirements.txt            # Lista de dependências do ambiente
+├── pyproject.toml              # Configuração de empacotamento da biblioteca
+└── classificador_agronews/
+    ├── classificador.py        # Cliente do Gemini e lógica de classificação
+    └── models.py               # Schemas Pydantic (NoticiaInput, ClassificacaoResultado)
+└── examples/
+    ├── integracao_django.py
+    └── uso_basico.py
 └── tests/
-    └── test_classificador.py # Script de teste de integração
+    └── test_classificador.py   # Script de teste de integração
 ```
 ## Empacotamento com pyproject.toml
 O arquivo **pyproject.toml** na raiz transforma este repositório em um pacote Python válido. Ele define o nome da biblioteca (`classificador-agronews`), a versão e as dependências necessárias para distribuição e instalação via pip.
