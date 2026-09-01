@@ -24,7 +24,7 @@ Desenvolvido para atuar como um microserviço/pacote independente, permitindo in
 ### 1. Clonar o repositório e acessar a pasta
 
 ```bash
-git clone [https://github.com/Lur4n/classificador-agronews.git](https://github.com/Lur4n/classificador-agronews)
+git clone [https://github.com/seu-usuario/classificador-agronews.git](https://github.com/seu-usuario/classificador-agronews.git)
 
 cd classificador-agronews
 ```
