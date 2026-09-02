@@ -9,7 +9,7 @@ from .models import ClassificacaoResultado, NoticiaInput
 # Carrega as variáveis do .env assim que o módulo é importado
 load_dotenv()
 
-
+#servico de classificacao
 class ClassificadorAgronews:
 
   def __init__(self, api_key: str = None):
