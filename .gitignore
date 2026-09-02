@@ -1,13 +1,51 @@
-# Arquivos e documentações locais
+# Empacotamento
 pyproject.toml
+# Arquivos e documentações locais
 arquitetura.md
 
-# Variaveis de Ambiente
+# Variáveis de ambiente e ambientes virtuais
 .env
 .env.local
+.venv/
 venv/
+ENV/
 
-# indesejados
+# Python / Bytecode / Pacotes
 __pycache__/
 *.egg-info/
 *.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg
+
+# Testes e Cobertura (Coverage)
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# IDEs e Editores de Código
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
