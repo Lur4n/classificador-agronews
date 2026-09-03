@@ -24,7 +24,7 @@ Desenvolvido para atuar como um microserviço/pacote independente, permitindo in
 ### 1. Clonar o repositório e acessar a pasta
 
 ```bash
-git clone [https://github.com/seu-usuario/classificador-agronews.git](https://github.com/seu-usuario/classificador-agronews.git)
+git clone [https://github.com/gpsiscomifmg/classificador-agronews.git](https://github.com/gpsiscomifmg/classificador-agronews.git)
 
 cd classificador-agronews
 ```
@@ -81,16 +81,20 @@ python tests/test_classificador.py
 O arquivo **pyproject.toml** na raiz transforma este repositório em um pacote Python válido. Ele define o nome da biblioteca (`classificador-agronews`), a versão e as dependências necessárias para distribuição e instalação via pip.
 
 ## Como Testar a Biblioteca no Seu Projeto Django (`web-agronews`)
-*Por ser stateless (sem banco de dados próprio), este módulo pode ser instalado diretamente no ambiente virtual de outros projetos, como o **web-agronews**.*
-
+Por ser stateless (sem banco de dados próprio), este módulo pode ser instalado diretamente no ambiente virtual de outros projetos, como o **web-agronews**.
 ### 1. Instalação no web-agronews
-Para testar a integração da biblioteca em um ambiente Django real sem afetar o banco de dados, crie um **Management Command** personalizado.
+Para uso da equipe no web-agronews:
 
-No terminal do seu projeto Django `web-agronews`, com o ambiente virtual ativado, instale o pacote em modo editável  (-e):
+Para utilizar a biblioteca no projeto Django sem precisar clonar este repositório separadamente, instale o pacote diretamente do GitHub no terminal do web-agronews:
 ```bash
-pip install -e /caminho/para/classificador-agronews
+pip install git+[https://github.com/gpsiscomifmg/classificador-agronews.git](https://github.com/gpsiscomifmg/classificador-agronews.git)
 ```
+#### Em caso de atualizações no módulo:
 
+Quando o módulo receber atualizações no GitHub e você precisar da versão mais recente no web-agronews, execute o comando abaixo com a flag --upgrade:
+```
+pip install --upgrade git+[https://github.com/gpsiscomifmg/classificador-agronews.git](https://github.com/gpsiscomifmg/classificador-agronews.git)
+```
 
 ### 2. Criar Estrutura de Pastas
 Dentro da app onde ficará a lógica (ex: noticias), crie a pasta management/commands com os arquivos `__init__.py`:
