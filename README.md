@@ -97,11 +97,11 @@ pip install --upgrade git+[https://github.com/gpsiscomifmg/classificador-agronew
 ```
 
 ### 2. Criar Estrutura de Pastas
-Dentro da app onde ficará a lógica (ex: noticias), crie a pasta management/commands com os arquivos `__init__.py`:
+Dentro da app onde ficará a lógica (ex: scraper), crie a pasta management/commands com os arquivos `__init__.py`:
 ```
-New-Item -ItemType Directory -Path "noticias\management\commands" -Force
-New-Item -ItemType File -Path "noticias\management\__init__.py" -Force
-New-Item -ItemType File -Path "noticias\management\commands\__init__.py" -Force
+New-Item -ItemType Directory -Path "scraper\management\commands" -Force
+New-Item -ItemType File -Path "scraper\management\__init__.py" -Force
+New-Item -ItemType File -Path "scraper\management\commands\__init__.py" -Force
 ```
 ### 3. Adicionar a API Key no .env do web-agronews
 No arquivo .env do web-agronews, declare a chave da API do Gemini:
@@ -110,7 +110,7 @@ GEMINI_API_KEY="sua_chave_do_google_ai_studio_aqui"
 ```
 
 ### 4. Criar o Script de Teste
-Crie o arquivo test_classificacao.py no caminho noticias/management/commands/test_classificacao.py e adicione o seguinte conteúdo:
+Crie o arquivo test_classificacao.py no caminho scraper/management/commands/test_classificacao.py e adicione o seguinte conteúdo:
 ```
 from django.core.management.base import BaseCommand
 from classificador_agronews.classificador import ClassificadorAgronews
